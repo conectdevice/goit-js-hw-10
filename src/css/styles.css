@@ -1,0 +1,167 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+
+/* Загальні стилі для проекту */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Таймер */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #4e75ff;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+
+/* Кнопка для таймера */
+button[data-start] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button[data-start]:hover,
+button[data-start]:focus {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+/* Форма генератора промісів */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form input[type='number'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.form input[type='number']:hover,
+.form input[type='number']:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+/* Стилі для радіокнопок */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+label input[type='radio'] {
+  margin-right: 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+label:hover input[type='radio'] {
+  border-color: #4e75ff;
+}
+
+/* Кнопка для промісу */
+.form button {
+  width: 100%;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #6c8cff;
+}
+
+fieldset:hover,
+input[type='number']:hover {
+  border-color: #4e75ff;
+}
+
+
+
